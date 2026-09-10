@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Hassan — Data Scientist & BI Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f7f8fa;
+    --text:#1f2328;
+    --muted:#5b6470;
+    --line:#e3e6ea;
+    --accent:#2f7a4d;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    line-height:1.6;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  h1,h2,h3,h4{margin:0 0 8px;font-weight:700;}
+  p{margin:0 0 12px;color:var(--muted);}
+  .container{max-width:900px;margin:0 auto;padding:0 24px;}
+  section{padding:56px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{font-size:26px;margin-bottom:24px;}
+
+  /* nav */
+  nav{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:18px 24px;border-bottom:1px solid var(--line);
+    position:sticky;top:0;background:var(--bg);
+  }
+  nav .name{font-weight:700;font-size:18px;}
+  nav .menu a{margin-left:20px;font-size:14px;color:var(--text);}
+
+  /* hero */
+  .hero{text-align:center;padding:72px 24px;background:var(--bg-soft);}
+  .hero h1{font-size:36px;}
+  .hero p{max-width:600px;margin:12px auto 24px;font-size:17px;}
+  .btn{
+    display:inline-block;padding:10px 20px;border-radius:6px;
+    font-weight:600;font-size:14px;margin:4px;
+  }
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{opacity:0.9;text-decoration:none;}
+  .btn-outline{border:1px solid var(--line);color:var(--text);}
+  .btn-outline:hover{background:var(--bg-soft);text-decoration:none;}
+
+  /* stats */
+  .stats{display:flex;flex-wrap:wrap;gap:24px;margin-top:24px;}
+  .stat{flex:1 1 140px;}
+  .stat .num{font-size:22px;font-weight:700;color:var(--accent);}
+  .stat .lab{font-size:13px;color:var(--muted);}
+
+  /* skills */
+  .skill-group{margin-bottom:18px;}
+  .skill-group h4{font-size:14px;color:var(--muted);margin-bottom:8px;font-weight:600;}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;}
+  .tag{
+    background:var(--bg-soft);border:1px solid var(--line);
+    padding:5px 12px;border-radius:14px;font-size:13px;
+  }
+
+  /* projects */
+  .project{
+    border:1px solid var(--line);border-radius:8px;
+    padding:24px;margin-bottom:24px;background:var(--bg);
+  }
+  .project h3{font-size:19px;}
+  .project .tagline{font-size:13px;color:var(--accent);font-weight:600;margin-bottom:6px;}
+  .project img{width:100%;border-radius:6px;border:1px solid var(--line);margin-top:12px;}
+  .project ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:14px;}
+  .project ul li{margin-bottom:4px;}
+  .gallery{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px;}
+  .gallery img{margin-top:0;}
+  .kpis{display:flex;flex-wrap:wrap;gap:16px;margin:14px 0;font-size:14px;}
+  .kpis span{background:var(--bg-soft);padding:6px 10px;border-radius:6px;}
+  .kpis b{color:var(--text);}
+
+  .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  @media (max-width:700px){.proj-grid{grid-template-columns:1fr;} .gallery{grid-template-columns:1fr;}}
+
+  /* timeline */
+  .item{padding:16px 0;border-top:1px solid var(--line);}
+  .item:first-child{border-top:none;}
+  .item .when{font-size:13px;color:var(--accent);font-weight:600;}
+  .item h4{font-size:16px;margin:2px 0 2px;}
+  .item .org{font-size:14px;color:var(--muted);margin-bottom:4px;}
+
+  /* research */
+  .research{display:flex;flex-wrap:wrap;gap:10px;}
+  .research span{
+    background:var(--bg-soft);border:1px solid var(--line);
+    padding:8px 14px;border-radius:6px;font-size:14px;color:var(--text);
+  }
+
+  footer{text-align:center;padding:24px;font-size:13px;color:var(--muted);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="name">Ali Hassan</div>
+  <div class="menu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Ali Hassan</h1>
+  <p>Data Analytics &amp; BI Coach and Data Scientist based in Faisalabad, Pakistan. I turn raw data into Power BI dashboards, machine learning models, and tools people actually use.</p>
+  <a class="btn btn-primary" href="#projects">See my work</a>
+  <a class="btn btn-outline" href="mailto:alihassanabajwauaf@gmail.com">Contact me</a>
+</div>
+
+<section id="about">
+  <div class="container">
+    <h2>About</h2>
+    <p>My background is in applied mathematics — an M.Phil in Applied Mathematics, built on an M.Sc in Mathematics and a B.Sc in Mathematics and Physics. That foundation still shapes how I approach a dataset: understand the structure of the problem before reaching for a tool.</p>
+    <p>Since then I've moved into data analytics, business intelligence, and machine learning — cleaning retail data into Power BI dashboards, building ML pipelines with better feature engineering, and shipping small chatbot and generative AI demos with Flask and Streamlit. I've also lectured mathematics at university and college level.</p>
+    <p>Today I coach Data Analytics &amp; BI under a Government of Pakistan digital-skills initiative, and keep building Power BI and Python projects on the side.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skill-group">
+      <h4>Languages</h4>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">R</span><span class="tag">SQL</span><span class="tag">MATLAB</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>BI &amp; Visualization</h4>
+      <div class="tags">
+        <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Power Query</span><span class="tag">Excel</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Machine Learning &amp; AI</h4>
+      <div class="tags">
+        <span class="tag">TensorFlow</span><span class="tag">Deep Learning</span><span class="tag">Neural Networks</span><span class="tag">Generative AI</span><span class="tag">NLP</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>App Development</h4>
+      <div class="tags">
+        <span class="tag">Django</span><span class="tag">Flask</span><span class="tag">Streamlit</span><span class="tag">NumPy</span><span class="tag">Pandas</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Core Practice</h4>
+      <div class="tags">
+        <span class="tag">Data Wrangling</span><span class="tag">EDA</span><span class="tag">Feature Engineering</span><span class="tag">LaTeX / Overleaf</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <div class="tagline">FEATURED · Power BI · Power Query · DAX</div>
+      <h3>FreshMart Retail Solutions — Sales Performance Dashboard</h3>
+      <p>An interactive Power BI dashboard for a retail supermarket chain. I cleaned and transformed the raw sales data in Power Query, wrote the DAX measures behind every KPI, and designed three linked views for sales performance, product profitability, and customer &amp; geographic insight — all driven by shared slicers.</p>
+      <div class="kpis">
+        <span><b>$2.30M</b> revenue</span>
+        <span><b>$286.40K</b> profit</span>
+        <span><b>5K</b> orders</span>
+        <span><b>$458.61</b> avg order value</span>
+        <span><b>12.47%</b> profit margin</span>
+      </div>
+      <div class="gallery">
+        <img src="assets/freshmart-1.png" alt="FreshMart dashboard: KPIs, monthly revenue trend, category breakdown">
+        <img src="assets/freshmart-2.png" alt="FreshMart dashboard: product and sub-category performance">
+        <img src="assets/freshmart-3.png" alt="FreshMart dashboard: geographic map and customer segment insight">
+      </div>
+    </div>
+
+    <div class="proj-grid">
+      <div class="project">
+        <h3>Chatbot Apps with Flask &amp; Streamlit</h3>
+        <img src="assets/tts-demo.png" alt="Text-to-Speech demo interface">
+        <ul>
+          <li>Text-to-speech feature for natural-sounding audio</li>
+          <li>Text-to-image generator using deep learning models</li>
+          <li>Flask + Streamlit for real-time interaction</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Feature Engineering for ML Models</h3>
+        <img src="assets/risk-score.png" alt="Risk score prediction result">
+        <ul>
+          <li>Handled missing values, outliers and feature scaling</li>
+          <li>Dimensionality reduction lifted accuracy by 15%</li>
+          <li>Automated feature extraction pipeline</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Automated EDA</h3>
+        <img src="assets/movies-eda.png" alt="Pie chart from automated EDA workflow">
+        <ul>
+          <li>Reusable workflow for trends and correlations</li>
+          <li>Cut typical analysis time by ~40%</li>
+          <li>Applied across multiple datasets</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Tweet Prediction Score Model</h3>
+        <ul>
+          <li>NLP model predicting tweet engagement</li>
+          <li>Built with Python and TensorFlow, +25% accuracy</li>
+          <li>Integrated with real-time analysis tools</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <h2>Experience</h2>
+    <div class="item">
+      <div class="when">06/2026 — Present</div>
+      <h4>Data Analytics &amp; BI Coach</h4>
+      <div class="org">DigiSkills.pk, Government of Pakistan</div>
+    </div>
+    <div class="item">
+      <div class="when">10/2024 — 05/2026</div>
+      <h4>Mathematics Lecturer</h4>
+      <div class="org">Superior University, Lahore</div>
+    </div>
+    <div class="item">
+      <div class="when">11/2023 — 08/2024</div>
+      <h4>Lecturer</h4>
+      <div class="org">Lahore College of Science &amp; Commerce, Faisalabad</div>
+    </div>
+    <div class="item">
+      <div class="when">11/2023 — 08/2024</div>
+      <h4>Data Scientist (Freelance / Research)</h4>
+      <div class="org">Independent — Python-based data science &amp; ML services</div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <h2>Education &amp; Certifications</h2>
+    <div class="item"><h4>M.Phil, Applied Mathematics</h4><div class="org">University of Agriculture, Faisalabad</div></div>
+    <div class="item"><h4>M.Sc, Mathematics — CGPA 3.59/4.00</h4><div class="org">University of Agriculture, Faisalabad</div></div>
+    <div class="item"><h4>B.Sc, Mathematics (A/B) &amp; Physics</h4><div class="org">Government College University, Faisalabad</div></div>
+    <div class="item"><h4>Data Analytics and Business Intelligence</h4><div class="org">DigiSkills.pk</div></div>
+    <div class="item"><h4>AI with Python Certification</h4><div class="org">DigiSkills.pk</div></div>
+    <div class="item"><h4>AI and Data Science Certification</h4><div class="org">Codanics</div></div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="container">
+    <h2>Research Interests</h2>
+    <div class="research">
+      <span>Data Science &amp; Machine Learning</span>
+      <span>Mathematical Modeling &amp; Simulation</span>
+      <span>Fuzzy Mathematics</span>
+      <span>Differential Equations</span>
+      <span>Advanced Probability &amp; Bayesian Theory</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <p>Have a dataset that needs a story, or want help getting started with Power BI or analytics? I'd like to hear from you.</p>
+    <div class="stats">
+      <div class="stat"><div class="lab">Email</div><a href="mailto:alihassanabajwauaf@gmail.com">alihassanabajwauaf@gmail.com</a></div>
+      <div class="stat"><div class="lab">Location</div><div>Faisalabad, Pakistan</div></div>
+      <div class="stat"><div class="lab">Research</div><a href="https://www.researchgate.net/profile/Ali-Hassan-199" target="_blank" rel="noopener">ResearchGate ↗</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>Ali Hassan — Data Analytics &amp; BI Coach · Data Scientist</footer>
+
+</body>
+</html>
